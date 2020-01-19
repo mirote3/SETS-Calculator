@@ -1,0 +1,102 @@
+	HELLO,
+	This program is calcultor for sets.
+ 
+------------------Instrucrions-------------------
+	The Available commands are:
+
+	1.read_set - Recive One Parameter
+	2.print_set - Recive One Parameter
+	3.union_set - Recive 3 Parametres
+	4.intersect_set - Recive 3 Parametres
+	5.sub_set - Recive 3 Parametres
+	6.stmdiff_set - Recive 3 Parametres
+
+	To stop the program, Enter the command 'stop' 
+	If you use 'read_set',the final parameter MUST be -1
+
+	The Available Sets ARE :
+	-SETA
+	-SETB
+	-SETC
+	-SETD
+	-SETE
+	-SETF
+	Each Set Can Contain The Numbers Between 0 To 127
+
+	Notice! The Parameter Name MUST Be in Uppercase, There Must Be A Comma Between The Parameters.
+
+
+	Please enter command:
+
+Command Line Inserted:  read_set SETG,3,2,1,-1
+Undefined set name
+
+Please enter command:
+
+Command Line Inserted:  read_set setA,2,3,-1
+Undefined set name
+
+Please enter command:
+
+Command Line Inserted:  do_it SETA,SETB,SETC
+Undefined command name !
+
+Please enter command:
+
+Command Line Inserted:  UNION_set SETA,SETB,SETC
+Undefined command name !
+
+Please enter command:
+
+Command Line Inserted:  read_set SETB,45,567,34,-1
+Invaild set member inserted
+
+Please enter command:
+
+Command Line Inserted:  read_set SETA,45,56,56
+List of numbers didn't terminated correctly
+
+Please enter command:
+
+Command Line Inserted:  read_set SETC,33,7,-2,1,-1
+Invaild set member inserted
+
+Please enter command:
+
+Command Line Inserted:  read_set SETD,2,3,xyz,5,-1
+Invaild set member inserted
+
+Please enter command:
+
+Command Line Inserted:  read_set SETA,2,3,4.0,-1
+Float number inserted, Please insert only integers.
+
+Please enter command:
+
+Command Line Inserted:  union_set SETA,SETB
+Missing Parameter
+
+Please enter command:
+
+Command Line Inserted:  print_set SETC,SETD
+Extraneous text after end of command
+
+Please enter command:
+
+Command Line Inserted:  sub_set SETA,,SETB,SETC
+Illegal comma
+
+Please enter command:
+
+Command Line Inserted:  intersect_set SETA SETD SETB
+Missed comma
+
+Please enter command:
+
+Command Line Inserted:  symdiff_set,SETA,SETB,SETC
+Illegal comma
+
+Please enter command:
+
+Command Line Inserted:  ÿ
+THE INPUT IS OVER! -- EOF -- 

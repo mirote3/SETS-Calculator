@@ -1,0 +1,14 @@
+read_set SETG,3,2,1,-1
+read_set setA,2,3,-1
+do_it SETA,SETB,SETC
+UNION_set SETA,SETB,SETC
+read_set SETB,45,567,34,-1
+read_set SETA,45,56,56
+read_set SETC,33,7,-2,1,-1
+read_set SETD,2,3,xyz,5,-1
+read_set SETA,2,3,4.0,-1
+union_set SETA,SETB
+print_set SETC,SETD
+sub_set SETA,,SETB,SETC
+intersect_set SETA SETD SETB
+symdiff_set,SETA,SETB,SETC
